@@ -33,6 +33,7 @@ def lambda_handler(event, context):
     # bucket = event['Records'][0]['s3']['bucket']['name']
     # key = event['Records'][0]['s3']['object']['key']
     print('text sample')
+    Print('text sample1')
 
     response = pipeline.put_job_success_result(
         jobId=event['CodePipeline.job']['id']
